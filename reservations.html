@@ -3,14 +3,14 @@
     <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>blooms & brew- drinks</title>
+  <title>blooms & brew- reservations</title>
   <link rel="stylesheet" href="styles.css">
     </head>
 
     <body class="reservations">
         <header>
             <nav class="nav-bar">
-                <h1></h1>
+                <h1>Reservations ✨</h1>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Foods</a></li>
@@ -21,8 +21,37 @@
         </header>
 
         <main>
-            <section>
+            <section class="reservations-form">
+                <form action="submit_reservation.php" method="post">
+                <h2>Book a Table 🪑</h2>
+                <p>Reseve a spot at our restaurant and enjoy a delightful dine!</p>
+
+                <label for="name"> 👤Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="phone">📞Phone Number:</label>
+                <input type="tel" name="number" id="number" required>
+
+                <label for="email">📧Email:</label>
+                <input type="text" name="email" id="email" required>
+
+                <label for="date">📅 Date:</label>
+                <input type="text" name="date" id="date"placeholder="dd/mm/yyyy">
+
+                <label for="time">⏰Time:</label> 
+                <input type="time" name="time" id="time" required>
+
+                <label for="guests">👥Number Of Guests:</label>
+                <input type="number" name="guests" id="guests" min="1"max="20" required>
+
+                <label for="message">Additional Notes</label>
+                <textarea name="message" id="message" placeholder="Any special requests or allergies"></textarea>
+
+                <button type="submit" class="btn">Reserve Now😊🌸 </button>
+               </form>
                 
-            </section>
+                 </section>
         </main>
     </body>
+
+</html>
