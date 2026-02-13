@@ -110,4 +110,19 @@ h2{
     letter-spacing: 1px;
 }
 
+.index-page h2{
+    color: #ffffff;
+}
+
+.menu-page h2{
+    color: #6a0572;
+}
+
+.drink h2 {
+    color: #004e92;
+}
+
+.reservations h2 {
+    color: #b76e79;
+}
 
