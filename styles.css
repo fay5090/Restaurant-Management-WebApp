@@ -14,12 +14,14 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: antiquewhite;
+    background-color: rgb(13, 177, 227);
 
 }
 
 .nav-bar h1{
-    color: white;
+    color: rgb(64, 154, 193);
+    text-align: center;
+    
 }
 
 .nav-links{
@@ -32,3 +34,18 @@ body{
     color: #222;
 }
 
+.index-page{
+    background: linear-gradient(to right ,#ff9ae , #fad0c4);0
+}
+
+.menu-page{
+ background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+.drinks{
+background: linear-gradient(to right,#89f7fe,#66a6ff );
+}
+
+.reservations{
+background: linear-gradient(to right, #fddb92,#d1fdff );
+}
