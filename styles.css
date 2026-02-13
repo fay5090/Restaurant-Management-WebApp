@@ -9,6 +9,11 @@ body{
     line-height: 1.6;
 }
 
+h1{
+    text-align: center;
+    background-color: #a6c1ee;
+}
+
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -155,7 +160,7 @@ footer{
     text-align: center;
 }
 
-main {
+.reservations main {
     display: flex;
     justify-content: center;
     padding: 60px 20px;
