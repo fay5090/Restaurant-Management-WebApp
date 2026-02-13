@@ -30,8 +30,9 @@ body{
     gap: 20px;
 }
 
-.nav-links a:hoverr{
-    color: #222;
+
+.nav-links a:hover{
+    color: #222;;
 }
 
 .index-page{
@@ -42,8 +43,8 @@ body{
  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
 }
 
-.drinks{
-background: linear-gradient(to right,#89f7fe,#66a6ff );
+.drink{
+background: linear-gradient(to right,#d43dc5,#db5a5a );
 }
 
 .reservations{
@@ -57,26 +58,28 @@ background: linear-gradient(to right, #fddb92,#d1fdff );
     justify-content: center;
     gap: 25px;
     padding: 40px;
+    width: 90%;
 }
 
 .food-item,
-.drinks-items{
+.drink-items{
     background: white;
-    width: 260px;
+    width: 90%;
     border-radius: 20px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0,0.15);
+   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+   transition: 0.3s ease;
 }
 
 .food-item:hover,
-.drinks-items:hover{
-    transform: translateY(-8px);
+.drink-items:hover{
+    transform: translateY(-10px);
 }
 
 
 .food-item img,
-.drinks-items img {
+.drink-items img {
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -98,6 +101,13 @@ background: linear-gradient(to right, #fddb92,#d1fdff );
     .drink-menu {
         width: 90%;
     }
+}
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 
 
