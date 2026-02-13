@@ -44,7 +44,7 @@ body{
 }
 
 .drink{
-background: linear-gradient(to right,#d43dc5,#db5a5a );
+background: linear-gradient(135deg,#43e97b, #38f9d7);
 }
 
 .reservations{
@@ -58,13 +58,13 @@ background: linear-gradient(to right, #fddb92,#d1fdff );
     justify-content: center;
     gap: 25px;
     padding: 40px;
-    width: 90%;
+
 }
 
 .food-item,
 .drink-items{
     background: white;
-    width: 90%;
+    width: 280px;
     border-radius: 20px;
     padding: 20px;
     text-align: center;
@@ -126,3 +126,85 @@ h2{
     color: #b76e79;
 }
 
+.welcome{
+    text-align: center;
+    padding: 60px 20px;
+    color: rgb(15, 15, 15);
+}
+
+.welcome img{
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.about-us{
+    text-align: center;
+    padding: 40px;
+    color: #333;
+}
+
+.about-us img{
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+footer{
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.reservations-form{
+    background: white;
+    padding: 40px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.reservations-form h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.reservations-form input,
+.reservations-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.reservations-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e754a6;
+}
