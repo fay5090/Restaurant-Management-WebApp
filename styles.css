@@ -8,3 +8,27 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: antiquewhite;
+
+}
+
+.nav-bar h1{
+    color: white;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a:hoverr{
+    color: #222;
+}
+
