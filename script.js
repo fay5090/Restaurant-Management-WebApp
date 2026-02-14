@@ -5,15 +5,16 @@ document.addEventListener("DOMContentLoaded",function() {
 //When someone click submit button,run this function
  if(form){
  form.addEventListener("submit",function(e) {
-//stops js normal behaviour
 e.preventDefault();
+// this stops the page from refreshing
+    // your code to save to localStorage
 //get input values
 const name = document.getElementById("name").value.trim();
 const phone = document.getElementById("number").value.trim();
 const email = document.getElementById("email").value.trim();
 const date = document.getElementById("date").value.trim();
 const time = document.getElementById("time").value;
-const guests = dparseInt.getElementById("guests").value;
+const guests = parseInt (document.getElementById("guests").value);
 
 //if something is empty show error
 if(!name||!phone||!email||!date||!time||!guests){
@@ -63,9 +64,7 @@ if (reservationList) {
 
   reservations.forEach(res => {
     const div = document.createElement("div");
-    div.innerHTML = `
-      <p><strong>${res.name}</strong> - ${res.date} at ${res.time} (${res.guests} guests)</p>
-    `;
+    div.innerHTML = `<p><strong>${res.name}</strong> - ${res.date} at ${res.time} (${res.guests} guests)</p>`;
     reservationList.appendChild(div);
    } );
 }
