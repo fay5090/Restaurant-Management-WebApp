@@ -91,7 +91,7 @@ background: linear-gradient(to right, #fddb92,#d1fdff );
 }
 
 @media (max-width: 768px) {
-    .nav-links{
+    nav ul {
         flex-direction: column;
     }
 

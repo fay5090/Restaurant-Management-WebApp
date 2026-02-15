@@ -28,14 +28,7 @@ alert("Guests must be between 1 and 20.");
  }
 
 // Create reservation object
-      const reservation = {
-        name,
-        phone,
-        email,
-        date,
-        time,
-        guests
-    };
+      const reservation = { name, phone, email, date,time,guests};
 
 //save this data in the browser permanently
 // Get existing reservations
@@ -56,17 +49,7 @@ alert("Guests must be between 1 and 20.");
 
 });
 
-const reservationList = document.getElementById("reservationList");
 
-if (reservationList) {
 
-  const reservations = JSON.parse(localStorage.getItem("reservations")) || [];
-
-  reservations.forEach(res => {
-    const div = document.createElement("div");
-    div.innerHTML = `<p><strong>${res.name}</strong> - ${res.date} at ${res.time} (${res.guests} guests)</p>`;
-    reservationList.appendChild(div);
-   } );
-}
 
 
