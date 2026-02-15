@@ -46,7 +46,7 @@ alert("Guests must be between 1 and 20.");
     });
 
   }
-  // Get reservations from localStorage
+  // Get reservations from localStorage and show on homepage 
 const homeList = document.getElementById("homeReservationList");
 
 if (homeList) {
@@ -57,14 +57,15 @@ if (homeList) {
   } else {
     reservations.forEach(function(reservation) {
       const li = document.createElement("li");
-      li.textContent = reservation.name + " - " + reservation.date + " at " + reservation.time;
+      li.textContent = reservation.name + " - " + reservation.date + " at " + reservation.time  + 
+                       " (" + reservation.guests + " guests)";
       homeList.appendChild(li);
     });
   }
 }
 
-});
 
+});
 
 
 
