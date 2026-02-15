@@ -100,7 +100,7 @@ background: linear-gradient(to right, #fddb92,#d1fdff );
     .drink-menu {
         width: 90%;
     }
-}
+
 
 h2{
     text-align: center;
@@ -229,3 +229,4 @@ footer{
     section{
         margin-bottom: 20px;
    }
+}
