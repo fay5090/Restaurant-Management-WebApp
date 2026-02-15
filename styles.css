@@ -90,11 +90,6 @@ background: linear-gradient(to right, #fddb92,#d1fdff );
     border-radius: 15px;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
     .food-menu,
     .drink-menu {
         flex-direction: column;
@@ -220,3 +215,17 @@ footer{
   border-bottom: 2px solid #d4a373;
   padding-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section{
+        margin-bottom: 20px;
+   }
