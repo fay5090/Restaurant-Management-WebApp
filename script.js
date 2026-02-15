@@ -46,6 +46,22 @@ alert("Guests must be between 1 and 20.");
     });
 
   }
+  // Get reservations from localStorage
+const homeList = document.getElementById("homeReservationList");
+
+if (homeList) {
+  const reservations = JSON.parse(localStorage.getItem("reservations")) || [];
+
+  if (reservations.length === 0) {
+    homeList.innerHTML = "<li>No upcoming reservations</li>";
+  } else {
+    reservations.forEach(function(reservation) {
+      const li = document.createElement("li");
+      li.textContent = reservation.name + " - " + reservation.date + " at " + reservation.time;
+      homeList.appendChild(li);
+    });
+  }
+}
 
 });
 
