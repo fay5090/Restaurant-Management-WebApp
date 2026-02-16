@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Grab the form
   const form = document.getElementById("reservationForm");
 
-  // Only run if form exists
+// Only run if form exists
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault(); // Stop page refresh
 
-      // Get values from inputs
+// Get values from inputs
       const name = document.getElementById("name").value.trim();
       const phone = document.getElementById("number").value.trim();
       const email = document.getElementById("email").value.trim();
@@ -17,22 +17,22 @@ document.addEventListener("DOMContentLoaded", function () {
       const time = document.getElementById("time").value;
       const guests = parseInt(document.getElementById("guests").value);
 
-      // Check for empty fields
+// Check for empty fields
       if (!name || !phone || !email || !date || !time || !guests) {
         alert("Please fill in all required fields!");
         return;
       }
 
-      // Check guests limit
+// Check guests limit
       if (guests < 1 || guests > 20) {
         alert("Guests must be between 1 and 20.");
         return;
       }
 
-      // Create reservation object
+// Create reservation object
       const reservation = { name, phone, email, date, time, guests };
 
-      // Get existing reservations from localStorage or empty array
+// Get existing reservations from localStorage or empty array
       let reservations = JSON.parse(localStorage.getItem("reservations")) || [];
 
       // Add new reservation
