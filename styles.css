@@ -121,9 +121,11 @@ h2{
     color: #004e92;
 }
 
-.drink .nav-bar h1 {
- align-self: center;
- color: cadetblue;
+.nav-bar h1 {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #2c003e; 
 }
 
 .reservations h2 {
