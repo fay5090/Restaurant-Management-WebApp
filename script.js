@@ -1,4 +1,4 @@
-// Wait until the page fully loads
+//Wait until page fully loads
 document.addEventListener("DOMContentLoaded", function () {
 
   // Grab the form
