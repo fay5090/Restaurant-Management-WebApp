@@ -48,7 +48,7 @@ h1{
 }
 
 .drink{
-background: linear-gradient(135deg,#43e97b, #38f9d7);
+ background: linear-gradient(to right, #74ebd5, #ACB6E5);
 }
 
 .reservations{
